@@ -11,7 +11,7 @@ const IndexPage = () => (
 </p>
     <p> Have a look around and play with the functionality of this website. Every page was created programmatically by pulling information from my CMS. The blogs were just me playing with that feature in the beginning but I decided to leave them in for reference. The store is just a bunch of pictures of my Pug. Nothing is really for sale, it’s just filler content. Enjoy!
 </p>
-   
+   <p><strong>Update:</strong> I added user authentication and login! Give it a try to see more pictures in the store!</p>
   </Layout>
 )
 
