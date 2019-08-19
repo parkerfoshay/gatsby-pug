@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
@@ -29,17 +30,31 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: '100%',
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div style={{
+  display: 'block',
+  padding: '20px',
+  height: '60px',
+  width: '100%',}}>
+        <footer style={{
+    backgroundColor: "#F8F8F8",
+    borderTop: "1px solid #E7E7E7",
+    textAlign: "center",
+    padding: "20px",
+    position: "fixed",
+    marginTop: "10px",
+    left: "0",
+    bottom: "0",
+    height: "60px",
+    width: "100%",}}>
+          © {new Date().getFullYear()}, Built by {data.site.siteMetadata.author}
         </footer>
+        </div>
       </div>
     </>
   )
