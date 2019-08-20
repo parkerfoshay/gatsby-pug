@@ -23,7 +23,7 @@ class Header extends React.Component {
           marginBottom: `1.45rem`,
         }}
       >
-        <div
+        <div id="header"
           style={{
             display: "flex",
             alignItems: "center",

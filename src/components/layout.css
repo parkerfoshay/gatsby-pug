@@ -654,3 +654,13 @@ pre tt:after {
 .netlify-identity-logout {
   color: white;
 }
+
+@media (max-width: 700px){
+  #header{
+      /* Reverse the axis of the header, making it vertical. */
+      flex-direction: column;
+
+      /* Align items to the begining (the left) of the header. */
+      align-items: center;
+  }
+}
